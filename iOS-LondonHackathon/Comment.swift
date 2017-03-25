@@ -17,4 +17,12 @@ struct Comment {
         self.text = text
     }
     
+    static var demoComments = [
+        Comment(text: "aaa"),
+        Comment(text: "bbb"),
+        Comment(text: "ccc"),
+        Comment(text: "ddd"),
+        Comment(text: "eee")
+    ]
+    
 }
