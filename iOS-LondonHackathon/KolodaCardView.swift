@@ -10,14 +10,18 @@ import UIKit
 
 class KolodaCardView: UIView {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var pointLabel: UILabel!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
     
     func configure(comment: Comment) {
-        label.text = comment.text
+        authorLabel.text = comment.author
+        textLabel.text = comment.text
+        pointLabel.text = String(comment.point)
     }
     
 }
