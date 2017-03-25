@@ -12,7 +12,6 @@ import Koloda
 class ResultViewController: UIViewController {
     
     @IBOutlet weak var kolodaView: KolodaView!
-    var savedIdList:[Int] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,13 +37,12 @@ extension ResultViewController: KolodaViewDelegate {
         if direction == .left {
 
         } else if direction == .right {
-            
-            savedIdList.append(index+1)
+            Comment.demoComments[index].isHelpful = true
         }
     }
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        
+        performSegue(withIdentifier: "toComment", sender: self)
         print("run out of cards")
     }
 }
