@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class StartViewController: UIViewController {
     
@@ -24,7 +25,10 @@ class StartViewController: UIViewController {
     
     
     @IBAction func didTouchNextButton() {
-        performSegue(withIdentifier: "toResult", sender: self)
+        SVProgressHUD.show()
+        SVProgressHUD.dismiss(withDelay: 2.0) {
+           self.performSegue(withIdentifier: "toResult", sender: self)
+        }
     }
 }
 
@@ -32,6 +36,7 @@ extension StartViewController: UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange,
                   replacementText text: String) -> Bool {
+        
         if text == "\n" {
             textView.resignFirstResponder()
             return false
