@@ -10,13 +10,17 @@
 		03058B3491F06519DABC71CD /* Pods_iOS_LondonHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89CD7EA85B03FDC437C488E /* Pods_iOS_LondonHackathon.framework */; };
 		1C701B87E330022A57E86D49 /* Pods_iOS_LondonHackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867234353F26F0D7E9677EA7 /* Pods_iOS_LondonHackathonUITests.framework */; };
 		9AF793751E8715C400FCE830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793741E8715C400FCE830 /* AppDelegate.swift */; };
-		9AF793771E8715C400FCE830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793761E8715C400FCE830 /* ViewController.swift */; };
+		9AF793771E8715C400FCE830 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793761E8715C400FCE830 /* ResultViewController.swift */; };
 		9AF7937A1E8715C400FCE830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF793781E8715C400FCE830 /* Main.storyboard */; };
 		9AF7937C1E8715C400FCE830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7937B1E8715C400FCE830 /* Assets.xcassets */; };
 		9AF7937F1E8715C400FCE830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7937D1E8715C400FCE830 /* LaunchScreen.storyboard */; };
 		9AF7938A1E8715C400FCE830 /* iOS_LondonHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793891E8715C400FCE830 /* iOS_LondonHackathonTests.swift */; };
 		9AF793951E8715C400FCE830 /* iOS_LondonHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793941E8715C400FCE830 /* iOS_LondonHackathonUITests.swift */; };
 		9AF793A91E871D0700FCE830 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793A81E871D0700FCE830 /* Comment.swift */; };
+		9AF793AB1E87235400FCE830 /* KolodaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793AA1E87235400FCE830 /* KolodaCardView.swift */; };
+		9AF793AD1E87238700FCE830 /* KolodaCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF793AC1E87238700FCE830 /* KolodaCardView.xib */; };
+		9AF793B01E87240700FCE830 /* KolodaOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF793AF1E87240700FCE830 /* KolodaOverlayView.swift */; };
+		9AF793B21E87242B00FCE830 /* KolodaOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF793B11E87242B00FCE830 /* KolodaOverlayView.xib */; };
 		EB72B457FF9037DEC669D9CF /* Pods_iOS_LondonHackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B807D7FAEAE7E41C3413DFA /* Pods_iOS_LondonHackathonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +50,7 @@
 		867234353F26F0D7E9677EA7 /* Pods_iOS_LondonHackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_LondonHackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF793711E8715C400FCE830 /* iOS-LondonHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-LondonHackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF793741E8715C400FCE830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AF793761E8715C400FCE830 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AF793761E8715C400FCE830 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9AF793791E8715C400FCE830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AF7937B1E8715C400FCE830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF7937E1E8715C400FCE830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,10 @@
 		9AF793941E8715C400FCE830 /* iOS_LondonHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_LondonHackathonUITests.swift; sourceTree = "<group>"; };
 		9AF793961E8715C400FCE830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AF793A81E871D0700FCE830 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		9AF793AA1E87235400FCE830 /* KolodaCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaCardView.swift; sourceTree = "<group>"; };
+		9AF793AC1E87238700FCE830 /* KolodaCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KolodaCardView.xib; sourceTree = "<group>"; };
+		9AF793AF1E87240700FCE830 /* KolodaOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaOverlayView.swift; sourceTree = "<group>"; };
+		9AF793B11E87242B00FCE830 /* KolodaOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KolodaOverlayView.xib; sourceTree = "<group>"; };
 		E5727246DA1DB046805DF4CE /* Pods-iOS-LondonHackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-LondonHackathonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-LondonHackathonUITests/Pods-iOS-LondonHackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F89CD7EA85B03FDC437C488E /* Pods_iOS_LondonHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_LondonHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA85A9E1436554D893EA328F /* Pods-iOS-LondonHackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-LondonHackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-LondonHackathonTests/Pods-iOS-LondonHackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,9 +147,10 @@
 		9AF793731E8715C400FCE830 /* iOS-LondonHackathon */ = {
 			isa = PBXGroup;
 			children = (
+				9AF793AE1E8723F000FCE830 /* View */,
 				9AF793A71E871CFA00FCE830 /* Model */,
 				9AF793741E8715C400FCE830 /* AppDelegate.swift */,
-				9AF793761E8715C400FCE830 /* ViewController.swift */,
+				9AF793761E8715C400FCE830 /* ResultViewController.swift */,
 				9AF793781E8715C400FCE830 /* Main.storyboard */,
 				9AF7937B1E8715C400FCE830 /* Assets.xcassets */,
 				9AF7937D1E8715C400FCE830 /* LaunchScreen.storyboard */,
@@ -174,6 +183,17 @@
 				9AF793A81E871D0700FCE830 /* Comment.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9AF793AE1E8723F000FCE830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AF793AC1E87238700FCE830 /* KolodaCardView.xib */,
+				9AF793AA1E87235400FCE830 /* KolodaCardView.swift */,
+				9AF793AF1E87240700FCE830 /* KolodaOverlayView.swift */,
+				9AF793B11E87242B00FCE830 /* KolodaOverlayView.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +317,8 @@
 			files = (
 				9AF7937F1E8715C400FCE830 /* LaunchScreen.storyboard in Resources */,
 				9AF7937C1E8715C400FCE830 /* Assets.xcassets in Resources */,
+				9AF793B21E87242B00FCE830 /* KolodaOverlayView.xib in Resources */,
+				9AF793AD1E87238700FCE830 /* KolodaCardView.xib in Resources */,
 				9AF7937A1E8715C400FCE830 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,8 +482,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF793B01E87240700FCE830 /* KolodaOverlayView.swift in Sources */,
 				9AF793A91E871D0700FCE830 /* Comment.swift in Sources */,
-				9AF793771E8715C400FCE830 /* ViewController.swift in Sources */,
+				9AF793771E8715C400FCE830 /* ResultViewController.swift in Sources */,
+				9AF793AB1E87235400FCE830 /* KolodaCardView.swift in Sources */,
 				9AF793751E8715C400FCE830 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
