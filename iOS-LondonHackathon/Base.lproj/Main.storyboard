@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dFs-Vt-jHL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Result View Controller-->
+        <!--New Post-->
+        <scene sceneID="zHH-MB-wy5">
+            <objects>
+                <viewController id="lIt-32-pOr" customClass="StartViewController" customModule="iOS_LondonHackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ccb-ZU-kU6"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZH9-3s-9nv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Keq-Gx-we0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGo-Vq-Hf0">
+                                <rect key="frame" x="139" y="124" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="as6-Sy-Jvp">
+                                <rect key="frame" x="67" y="208" width="240" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqL-4h-DFx">
+                                <rect key="frame" x="164" y="507" width="46" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTouchNextButton" destination="lIt-32-pOr" eventType="touchUpInside" id="bH8-Sn-b89"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Post" id="fvh-xt-FTY"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toResult" id="6f3-0s-1ZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGO-aR-1Kk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="124.58770614692655"/>
+        </scene>
+        <!--Recommended-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ResultViewController" customModule="iOS_LondonHackathon" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,13 +83,67 @@
                             <constraint firstItem="HHa-Aj-E0Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4U-L1-fAQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Recommended" id="Mpy-EH-BU5"/>
                     <connections>
                         <outlet property="kolodaView" destination="HHa-Aj-E0Z" id="Dg8-Ql-cBa"/>
+                        <segue destination="t9Y-F0-TqI" kind="show" identifier="toComment" id="ATA-6r-ZQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="124.58770614692655"/>
+            <point key="canvasLocation" x="1031.2" y="124.58770614692655"/>
+        </scene>
+        <!--Comment-->
+        <scene sceneID="PHN-0b-fdA">
+            <objects>
+                <viewController id="t9Y-F0-TqI" customClass="CommentViewController" customModule="iOS_LondonHackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gbC-A4-KUG"/>
+                        <viewControllerLayoutGuide type="bottom" id="7DN-hP-9TR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ioQ-Rf-BaF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-G0-dkv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xRS-G0-dkv" secondAttribute="trailing" id="3ec-BY-qBA"/>
+                            <constraint firstItem="xRS-G0-dkv" firstAttribute="top" secondItem="gbC-A4-KUG" secondAttribute="bottom" id="DzG-Yn-3ht"/>
+                            <constraint firstItem="xRS-G0-dkv" firstAttribute="leading" secondItem="ioQ-Rf-BaF" secondAttribute="leading" id="MfZ-z5-drY"/>
+                            <constraint firstItem="7DN-hP-9TR" firstAttribute="top" secondItem="xRS-G0-dkv" secondAttribute="bottom" id="XBl-qf-PEs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comment" id="Epo-fD-ZE9"/>
+                    <connections>
+                        <outlet property="tableView" destination="xRS-G0-dkv" id="gjT-EQ-Hbl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJd-LE-xhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.8" y="124.58770614692655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t8R-GU-iK0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dFs-Vt-jHL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9s2-Ul-Pqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lIt-32-pOr" kind="relationship" relationship="rootViewController" id="RSw-yJ-Cln"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ub0-Zb-Utj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="125"/>
         </scene>
     </scenes>
 </document>
