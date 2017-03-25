@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Koloda (4.0):
+    - pop (~> 1.0)
+  - pop (1.0.9)
+  - SCLAlertView (0.7.0)
+  - SVProgressHUD (2.1.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - Koloda (~> 4.0)
+  - SCLAlertView
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Koloda: cb171633afc6182a77821b7951e38b2cb272ba7c
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 45a7cbdcd0320b4f7462198b91b38b20ce60cf82
+
+COCOAPODS: 1.2.0
