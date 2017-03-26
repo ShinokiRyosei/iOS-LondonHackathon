@@ -22,7 +22,7 @@ class CommentTableViewCell: UITableViewCell {
     func configure(comment: Comment) {
         authorLabel.text = comment.author
         label.text = comment.text
-        pointLabel.text = String(comment.point)
+        pointLabel.text = "point \(comment.point)"
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

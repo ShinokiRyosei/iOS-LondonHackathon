@@ -105,15 +105,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-G0-dkv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-G0-dkv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.16038811210000001" green="0.1677560508" blue="0.21337759489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xRS-G0-dkv" secondAttribute="trailing" id="3ec-BY-qBA"/>
-                            <constraint firstItem="xRS-G0-dkv" firstAttribute="top" secondItem="gbC-A4-KUG" secondAttribute="bottom" id="DzG-Yn-3ht"/>
+                            <constraint firstItem="xRS-G0-dkv" firstAttribute="top" secondItem="ioQ-Rf-BaF" secondAttribute="top" id="KRe-Fc-Z8c"/>
                             <constraint firstItem="xRS-G0-dkv" firstAttribute="leading" secondItem="ioQ-Rf-BaF" secondAttribute="leading" id="MfZ-z5-drY"/>
                             <constraint firstItem="7DN-hP-9TR" firstAttribute="top" secondItem="xRS-G0-dkv" secondAttribute="bottom" id="XBl-qf-PEs"/>
                         </constraints>

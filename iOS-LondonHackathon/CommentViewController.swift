@@ -39,6 +39,10 @@ extension CommentViewController: UITableViewDataSource {
         cell.configure(comment: comment)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
 }
 
 extension CommentViewController: UITableViewDelegate {
