@@ -21,30 +21,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqL-4h-DFx">
-                                <rect key="frame" x="164" y="507" width="46" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="didTouchNextButton" destination="lIt-32-pOr" eventType="touchUpInside" id="bH8-Sn-b89"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rikky0611" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKl-8C-D0i">
-                                <rect key="frame" x="141" y="135" width="92" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="as6-Sy-Jvp">
-                                <rect key="frame" x="41" y="213" width="292" height="241"/>
+                                <rect key="frame" x="41" y="184" width="292" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqL-4h-DFx">
+                                <rect key="frame" x="144" y="519" width="86" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <action selector="didTouchNextButton" destination="lIt-32-pOr" eventType="touchUpInside" id="bH8-Sn-b89"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="id: rikky0611" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKl-8C-D0i">
+                                <rect key="frame" x="139" y="135" width="96" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reddit" translatesAutoresizingMaskIntoConstraints="NO" id="gGn-YU-MRO">
+                                <rect key="frame" x="261" y="115" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.8311522603" green="0.83521574740000004" blue="0.84340238570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Post" id="fvh-xt-FTY"/>
                     <connections>
@@ -76,6 +80,10 @@
                                     <constraint firstAttribute="height" constant="400" id="W3j-wr-uVW"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swipe_bg" translatesAutoresizingMaskIntoConstraints="NO" id="psO-op-xZX">
+                                <rect key="frame" x="37" y="558" width="300" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -91,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.2" y="124.58770614692655"/>
+            <point key="canvasLocation" x="909.60000000000002" y="124.58770614692655"/>
         </scene>
         <!--Comment-->
         <scene sceneID="PHN-0b-fdA">
@@ -105,8 +113,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8P-MW-W4D">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-G0-dkv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.16038811210000001" green="0.1677560508" blue="0.21337759489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
@@ -114,19 +127,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xRS-G0-dkv" secondAttribute="trailing" id="3ec-BY-qBA"/>
-                            <constraint firstItem="xRS-G0-dkv" firstAttribute="top" secondItem="ioQ-Rf-BaF" secondAttribute="top" id="KRe-Fc-Z8c"/>
                             <constraint firstItem="xRS-G0-dkv" firstAttribute="leading" secondItem="ioQ-Rf-BaF" secondAttribute="leading" id="MfZ-z5-drY"/>
                             <constraint firstItem="7DN-hP-9TR" firstAttribute="top" secondItem="xRS-G0-dkv" secondAttribute="bottom" id="XBl-qf-PEs"/>
+                            <constraint firstItem="xRS-G0-dkv" firstAttribute="top" secondItem="gbC-A4-KUG" secondAttribute="bottom" id="gTT-gc-T8S"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Comment" id="Epo-fD-ZE9"/>
+                    <navigationItem key="navigationItem" title="Comment" id="Epo-fD-ZE9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="oTa-ei-dTK">
+                            <connections>
+                                <action selector="didTapShareButton" destination="t9Y-F0-TqI" id="lho-9f-a5Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="photoFrameView" destination="f8P-MW-W4D" id="BDK-93-fGn"/>
                         <outlet property="tableView" destination="xRS-G0-dkv" id="gjT-EQ-Hbl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJd-LE-xhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768.8" y="124.58770614692655"/>
+            <point key="canvasLocation" x="1664.8" y="124.58770614692655"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t8R-GU-iK0">
@@ -144,7 +164,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ub0-Zb-Utj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-657" y="125"/>
+            <point key="canvasLocation" x="-610" y="125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="next" width="300" height="300"/>
+        <image name="reddit" width="155" height="155"/>
+        <image name="swipe_bg" width="721" height="385"/>
+    </resources>
 </document>
