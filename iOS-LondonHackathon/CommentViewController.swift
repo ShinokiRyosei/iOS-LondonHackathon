@@ -11,8 +11,10 @@ import UIKit
 class CommentViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var photoFrameView: UIView!
     
     override func viewDidLoad() {
+        
         tableView.delegate = self
         tableView.dataSource = self
         super.viewDidLoad()
@@ -21,6 +23,21 @@ class CommentViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         tableView.reloadData()
+    }
+    
+    func takeScreenShot() -> UIImage {
+        
+        UIGraphicsBeginImageContext(photoFrameView.bounds.size)
+        photoFrameView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+    
+    @IBAction func didTapShareButton() {
+        
+        let image = takeScreenShot()
+        self.present(ShareActivityController.create(image), animated: true, completion: nil)
     }
     
 }
